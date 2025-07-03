@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: 'segoe UI', sans-serif;
+            }
+
+            body {
+                height:100vh;
+                background: #d3d9e3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .login {
+                background: #d3d9e3;
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 10px 10px 10px #232324,-10px -10px 20px #b3b9c5;
+                text-align: center;
+                width: 280px;
+            }
+            .login h2 {
+                color: #333;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
+            .login input {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background: #d3d9d3;
+                box-shadow: inset 5px 5px 10px #b8bcc4,inset -5px -5px 10px #eef4ff;
+                font-size: 14px;
+                color: #333;
+            }
+            .login button {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 20px;
+                background: #000000;
+                
+               font-weight: 600;
+               cursor: pointer;
+               transition: 0.3s ease;
+               color: #eef4ff;
+            }
+           
+
+
+        </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <input type="text" placeholder="username" />
+        <input type="password" placeholder="password" />
+
+        <button>Sign In</button>
+    </div>
+</body>
+</html>
