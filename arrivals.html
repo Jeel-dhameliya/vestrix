@@ -1,148 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vestrix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-        /*title*/
-    h1 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 40px 0 20px;
-      color: #111;
-    }
-
-    nav {
-      background-color: #000;
-      padding: 10px 0;
-    }
-
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .menu li {
-      margin: 0 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    .menu a:hover {
-      color: #f0c040; 
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu li {
-        margin: 10px 0;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-      }
-    }
-    /* Footer*/
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 50px;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #f0c040;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* for mobile */
-@media (max-width: 768px) {
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-}
-
-  </style>
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vestrix - New Arrivals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/arrivals.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+
+  <h3 style="text-align: center; color: #000; background-color: beige; margin: 0; padding: 10px 0; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 500;">Summer Sale Is Live Flat 10% Off</h3>
+
+  <!-- Header with Navigation -->
   <header>
-   <h1 style="text-align: center;"><i>Vestrix</i></h1>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="arrivals.html">New Arrivals</a></li>
-      <li><a href="collections.html">Collections</a></li>
-      <li><a href="accessories.html">Accessories</a></li>
-      <li><a href="lookbook.html">Lookbook</a></li>
-      <li><a href="giftcard.html">Gift Card</a></li>  
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-  </nav>
+    <div class="nav-container">
+      <h1>V E S T R I X</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        <li class="dropdown">
+          <a href="collections.html" class="dropdown-toggle">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a href="men.html">Men's Collection</a></li>
+            <li><a href="women.html">Women's Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="login-button-container"></div>
+    </div>
   </header>
-  
-  <br><br><br><br><br>
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h2>Experience The Latest.</h2>
+      <p>Discover our newest designs, fresh off the runway and crafted with unparalleled artistry.</p>
+    </div>
+  </section>
+
+  <section class="products-grid-section">
+    <h2 class="section-heading">Men's New Arrivals</h2>
+
+    <div class="product-grid">
+
+      <a href="product-detail.html?id=M1" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/D5D5D5/444444?text=Men%27s+Linen+Shirt" alt="Vestrix Men's Linen Shirt">
+        </div>
+        <div class="product-info">
+          <h4>Lux Linen Casual Shirt</h4>
+          <p class="category">Shirts</p>
+          <p class="price">₹4,500</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=M2" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/C5C5C5/555555?text=Men%27s+Tailored+Trousers" alt="Vestrix Men's Tailored Trousers">
+        </div>
+        <div class="product-info">
+          <h4>Premium Tailored Trousers</h4>
+          <p class="category">Bottoms</p>
+          <p class="price">₹5,800</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=M3" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/B0B0B0/666666?text=Men%27s+Minimalist+Jacket" alt="Vestrix Men's Minimalist Jacket">
+        </div>
+        <div class="product-info">
+          <h4>Urban Minimalist Jacket</h4>
+          <p class="category">Outerwear</p>
+          <p class="price">₹9,200</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=M4" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/A0A0A0/777777?text=Men%27s+Leather+Wallet" alt="Vestrix Men's Leather Wallet">
+        </div>
+        <div class="product-info">
+          <h4>Crafted Leather Wallet</h4>
+          <p class="category">Accessories</p>
+          <p class="price">₹3,100</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+      </div>
+  </section>
+
+  <section class="products-grid-section" style="margin-top: 100px;"> <h2 class="section-heading">Women's New Arrivals</h2>
+
+    <div class="product-grid">
+
+      <a href="product-detail.html?id=W1" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/F0F0F0/333333?text=Women%27s+Silk+A-line+Dress" alt="Vestrix Women's Silk A-line Dress">
+        </div>
+        <div class="product-info">
+          <h4>Silk A-line Midi Dress</h4>
+          <p class="category">Dresses</p>
+          <p class="price">₹8,999</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=W2" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/E8E8E8/444444?text=Women%27s+Tailored+Linen+Blazer" alt="Vestrix Women's Tailored Linen Blazer">
+        </div>
+        <div class="product-info">
+          <h4>Tailored Linen Blazer</h4>
+          <p class="category">Outerwear</p>
+          <p class="price">₹6,499</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=W3" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/F5F5F5/555555?text=Women%27s+Embroidered+Tunic" alt="Vestrix Women's Embroidered Tunic">
+        </div>
+        <div class="product-info">
+          <h4>Hand-Embroidered Tunic</h4>
+          <p class="category">Tops</p>
+          <p class="price">₹4,299</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      <a href="product-detail.html?id=W4" class="product-card">
+        <div class="product-image-container">
+          <img src="https://via.placeholder.com/600x720/E0E0E0/666666?text=Women%27s+Wide-Leg+Trousers" alt="Vestrix Women's Wide-Leg Trousers">
+        </div>
+        <div class="product-info">
+          <h4>Luxury Wide-Leg Trousers</h4>
+          <p class="category">Bottoms</p>
+          <p class="price">₹5,199</p>
+        </div>
+        <div class="product-actions">
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </a>
+
+      </div>
+  </section>
 
   <footer>
-  <div class="footer-container">
-    <p>&copy; 2025 Vestrix. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+    <div class="footer-container">
+      <p>&copy; 2025 Vestrix. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-
-  <br><br><br><br><br>
-
-
-  
-
+  <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,148 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vestrix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-        /*title*/
-    h1 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 40px 0 20px;
-      color: #111;
-    }
-
-    nav {
-      background-color: #000;
-      padding: 10px 0;
-    }
-
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .menu li {
-      margin: 0 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    .menu a:hover {
-      color: #f0c040; 
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu li {
-        margin: 10px 0;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-      }
-    }
-    /* Footer*/
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 50px;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #f0c040;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* for mobile */
-@media (max-width: 768px) {
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-}
-
-  </style>
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Vestrix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-   <h1 style="text-align: center;"><i>Vestrix</i></h1>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="arrivals.html">New Arrivals</a></li>
-      <li><a href="collections.html">Collections</a></li>
-      <li><a href="accessories.html">Accessories</a></li>
-      <li><a href="lookbook.html">Lookbook</a></li>
-      <li><a href="giftcard.html">Gift Card</a></li>  
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-  </nav>
-  </header>
+
+ 
+  <div class="particle-bg">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
   
-  <br><br><br><br><br>
+  <!-- <h3 style="text-align: center; color: #000; background-color: beige; margin: 0;">Summer Sale Is Live Flat 10% Off</h3> -->
+
+  
+  <header>
+    <div class="nav-container">
+      <h1>V E S T R I X</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        <li class="dropdown">
+          <a href="collections.html" class="dropdown-toggle">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a href="men.html">Men's Collection</a></li>
+            <li><a href="women.html">Women's Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="login-button-container">
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>Get in Touch</h2>
+      <p>We're Here to Elevate Your Experience</p>
+    </div>
+  </section>
+
+ 
+  <main class="contact-content">
+    
+   
+    <section class="contact-intro">
+      <div class="container">
+        <div class="intro-content">
+          <h3>Let's Begin a Conversation</h3>
+          <p class="lead-text">
+            At Vestrix, we believe that exceptional service is the foundation of luxury. Whether you're seeking personalized styling advice, have questions about our collections, or simply wish to share your thoughts, we're here to listen and assist you on your journey to sartorial excellence.
+          </p>
+          <p>
+            Our dedicated team of fashion connoisseurs is committed to providing you with an experience that matches the quality of our garments. From the moment you reach out, you'll discover what it truly means to be part of the Vestrix family.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="contact-methods">
+      <div class="container">
+        <div class="methods-grid">
+          <div class="method-card">
+            <div class="method-icon">✉</div>
+            <h4>Email Us</h4>
+            <p>For general inquiries and support</p>
+            <a href="mailto:hello@vestrix.com" class="method-link">hello@vestrix.com</a>
+            <span class="response-time">Response within 24 hours</span>
+          </div>
+          
+          <div class="method-card">
+            <div class="method-icon">📞</div>
+            <h4>Call Us</h4>
+            <p>For immediate assistance and consultations</p>
+            <a href="tel:+1-555-VESTRIX" class="method-link">+1 (555) VESTRIX</a>
+            <span class="response-time">Mon-Fri, 9AM-6PM EST</span>
+          </div>
+          
+
+          
+          <div class="method-card">
+            <div class="method-icon">📍</div>
+            <h4>Visit Us</h4>
+            <p>Experience Vestrix in person</p>
+            <address class="method-link">
+              123 Luxury Avenue<br>
+              Fashion District<br>
+              New York, NY 10001
+            </address>
+            <span class="response-time">By appointment only</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-intro">
+            <h3>Send Us a Message</h3>
+            <p>
+              Tell us about your vision, your style, your dreams. Every message is read with care, and every inquiry is an opportunity to create something extraordinary together.
+            </p>
+          </div>
+          
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="styling">Personal Styling</option>
+                <option value="order">Order Support</option>
+                <option value="custom">Custom Design</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Share your thoughts, questions, or vision with us..." required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <span class="checkmark"></span>
+                I would like to receive updates about new collections and exclusive offers
+              </label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="faq-section">
+      <div class="container">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>How can I schedule a personal styling consultation?</h4>
+            <p>We offer complimentary personal styling consultations both in-store and virtually. Simply contact us through any of our channels, and our team will arrange a time that works perfectly for you.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>Do you offer custom tailoring services?</h4>
+            <p>Yes, our master tailors can create bespoke pieces tailored to your exact measurements and preferences. This service is available for select items and requires an initial consultation.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>What is your return and exchange policy?</h4>
+            <p>We offer a 30-day return policy for all unworn items with original tags attached. For exchanges, we provide complimentary shipping and will work with you to find the perfect alternative.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h4>How do I care for my Vestrix garments?</h4>
+            <p>Each garment comes with detailed care instructions. We recommend professional cleaning for most pieces and offer a complimentary care consultation with every purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h3>Ready to Experience Vestrix?</h3>
+        <p>Join us in creating moments of extraordinary elegance. Let's begin your journey to sartorial perfection.</p>
+        <div class="cta-buttons">
+          <a href="collections.html" class="cta-btn primary">Explore Collections</a>
+          <a href="about.html" class="cta-btn secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 
   <footer>
-  <div class="footer-container">
-    <p>&copy; 2025 Vestrix. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+    <div class="footer-container">
+      <p>&copy; 2025 Vestrix. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-
-  <br><br><br><br><br>
-
-
-  
-
+  <script src="js/index.js"></script>
 </body>
 </html>

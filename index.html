@@ -3,308 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vestrix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-
-    /* Title Animation */
-    h1 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 40px 0 20px;
-      color: #111;
-      opacity: 0;
-      animation: fadeSlideUp 1.2s ease-out forwards;
-    }
-
-    @keyframes fadeSlideUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    nav {
-      background-color: #000;
-      padding: 10px 0;
-      animation: fadeSlideUp 1.2s ease-out forwards;
-    }
-
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .menu li {
-      margin: 0 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    .menu a:hover {
-      color: #f0c040;
-    }
-
-    .login-button-container {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px 40px 0;
-      animation: fadeSlideUp 1.2s ease-out forwards;
-    }
-
-    .login-btn {
-      padding: 6px 14px;
-      background-color: #000;
-      color: #fff;
-      border: 1.5px solid #000;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .login-btn:hover {
-      background-color: #fff;
-      color: #000;
-    }
-
-    /* Home Layout Section */
-    .home-layout {
-      padding: 40px 20px;
-      animation: fadeSlideUp 1.2s ease-out forwards;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #080808, #484948);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-      border-radius: 8px;
-      margin-bottom: 40px;
-    }
-
-    .hero-text h2 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .hero-text p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 25px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #e7e316;
-      color: #000;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #e6b030;
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-around;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .feature-card {
-      background-color: #d9d7d7;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-card h3 {
-      margin-bottom: 10px;
-      font-family: 'Playfair Display', serif;
-    }
-            .feature-link {
-            text-decoration: none;
-            color: inherit;
-            flex: 1;
-            min-width: 250px;
-            max-width: 300px;
-            transition: transform 0.3s ease;
-            }      
-
-            .feature-link:hover .feature-card {
-              transform: translateY(-5px);
-              box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-              background-color: #f0f0f0;
-              cursor: pointer;
-            }
-
-
-    /* Footer */
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
-      animation: fadeSlideUp 1.2s ease-out forwards;
-    }
-
-    .footer-container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .footer-links {
-      margin-top: 10px;
-    }
-
-    .footer-links a {
-      color: #f0c040;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-   
-
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu li {
-        margin: 10px 0;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero-text h2 {
-        font-size: 2rem;
-      }
-
-      .features {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .footer-links {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-    }
-  </style>
+  <title>Vestrix - The Art of Uniqueness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+
+  <h3>Summer Sale Is Live Flat 10% Off</h3>
+
   <header>
-    <h1><i>Vestrix</i></h1>
-    <nav>
+    <div class="nav-container">
+      <h1>V E S T R I X</h1>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="arrivals.html">New Arrivals</a></li>
-        <li><a href="collections.html">Collections</a></li>
+        <li class="dropdown">
+          <a href="collections.html" class="dropdown-toggle">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a href="men.html">Men's Collection</a></li>
+            <li><a href="women.html">Women's Collection</a></li>
+          </ul>
+        </li>
         <li><a href="accessories.html">Accessories</a></li>
         <li><a href="lookbook.html">Lookbook</a></li>
         <li><a href="giftcard.html">Gift Card</a></li>
         <li><a href="cart.html">Cart</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="faq.html">FAQ</a></li>
       </ul>
-    </nav>
-    <div class="login-button-container">
-      <a href="login.html" class="login-btn">Login</a>
+      <div class="login-button-container">
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
     </div>
   </header>
 
-  <!-- Home Layout -->
-  <main class="home-layout">
-    <section class="hero">
-      <div class="hero-text">
-        <h2>Welcome to Vestrix</h2>
-        <p>Discover timeless fashion with a modern twist. Explore our new arrivals, curated collections, and stylish accessories.</p>
-        <a href="arrivals.html" class="cta-button">Shop Now</a>
+  <section class="hero-section" style="background-image:url(pictures/m2.jpg);">
+    <div class="hero-content">
+      <h2>Vestrix: The Art of Uniqueness.</h2>
+      <p>Where every stitch tells a story, and every design redefines individuality.</p>
+      <a href="collections.html" class="hero-btn">Discover Your Signature</a>
+    </div>
+  </section>
+
+  <section class="artistry-section">
+    <div class="artistry-content">
+        <h2>The Philosophy of Form.</h2>
+        <p>
+            At Vestrix, we don't just create fashion; we sculpt aspirations. Our designs are a dialogue between timeless elegance and modern audacity, inviting you to embrace clothing not merely as attire, but as a canvas for your personal narrative. We believe true style is an extension of the soul.
+        </p>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <h2 class="section-title">A Journey of Unrivaled Craftsmanship.</h2>
+
+    <div class="vision-block">
+        <div class="vision-block-image" style="background-image:url(pictures/a2.jpg);"></div>
+        <div class="vision-block-content">
+            <h3>Ethical Sourcing & Exquisite Materials.</h3>
+            <p>
+                Our quest for uniqueness begins at the source. We traverse the globe to discover and partner with ethical suppliers of the most exquisite natural fibers. From the whisper-soft silks of South India to the robust organic cottons cultivated with care, each material is selected for its inherent quality, its ecological footprint, and its ability to transform into a garment of unparalleled beauty.
+            </p>
+            <a href="collections.html" class="view-collection-btn">Explore Materials</a>
+        </div>
+    </div>
+
+    <div class="vision-block">
+        <div class="vision-block-image" style="background-image: url(pictures/a3.jpg);"></div>
+        <div class="vision-block-content">
+            <h3>The Hand of the Master Artisan.</h3>
+            <p>
+                Beyond machine precision, lies the irreplaceable touch of human artistry. Our dedicated artisans, custodians of generational techniques, imbue every Vestrix piece with a soulful dedication. Hand-embroidered details, meticulously tailored seams, and thoughtful finishes are not just elements; they are the silent testament to hours of passionate creation, making each garment truly unique.
+            </p>
+            <a href="lookbook.html" class="view-collection-btn">See Lookbook</a>
+        </div>
+    </div>
+
+    <div class="vision-block">
+        <div class="vision-block-image" style="background-image:url(pictures/a4.jpg);"></div>
+        <div class="vision-block-content">
+            <h3>Innovation in Design.</h3>
+            <p>
+                Innovation at Vestrix is not about reinventing the wheel, but reimagining its purpose. We push the boundaries of conventional design, blending avant-garde concepts with classic sophistication. Our collections feature unexpected silhouettes, unconventional textures, and a harmonious interplay of colors that ensure you wear a piece of art, not just clothing.
+            </p>
+            <a href="arrivals.html" class="view-collection-btn">View New Arrivals</a>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="section-spacing" style="background-color: var(--background-accent); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <h2 class="section-title">Editorial Moments: The Vestrix Narrative</h2>
+    <div class="text-block" style="text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; padding: 0 15px;">
+      <p>
+        Step into our world through the lens of our latest editorial features. These curated looks tell the story of our collections in motion, offering inspiration and showcasing the versatility and elegance inherent in every Vestrix design. Immerse yourself in the beauty of our pieces, styled for real life and aspirational moments.
+      </p>
+    </div>
+    <div class="editorial-grid">
+      <div class="editorial-item">
+        <img src="pictures/a5.jpg" alt="Model in Autumn Collection" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80';">
+        <div class="editorial-content">
+          <h4>Autumn Serenity: Soft Hues & Comfort</h4>
+          <p>Embrace the cooler days with our collection of luxurious knitwear and tailored outerwear, designed for warmth without compromising on grace.</p>
+        </div>
       </div>
-    </section>
-
-    <section class="features">
-  <a href="arrivals.html" class="feature-link">
-    <div class="feature-card">
-      <h3>New Arrivals</h3>
-      <p>Fresh drops weekly with the latest trends and exclusive designs.</p>
+      <div class="editorial-item">
+        <img src="pictures/a6.jpg" alt="Model in Urban Collection" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80';">
+        <div class="editorial-content">
+          <h4>Urban Chic: Effortless City Style</h4>
+          <p>Navigate the urban landscape with confidence in our sharp silhouettes and versatile separates that blend professionalism with modern edge.</p>
+        </div>
+      </div>
+      <div class="editorial-item">
+        <img src="pictures/a7.jpg" alt="Model in Resort Collection" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80';">
+        <div class="editorial-content">
+          <h4>Resort Escape: Tranquil Luxury</h4>
+          <p>From sun-drenched beaches to leisurely brunches, our resort wear offers breathable fabrics and relaxed fits for sophisticated escapism.</p>
+        </div>
+      </div>
     </div>
-  </a>
+  </section>
 
-  <a href="collections.html" class="feature-link">
-    <div class="feature-card">
-      <h3>Luxury Collections</h3>
-      <p>Premium handpicked outfits for modern elegance and comfort.</p>
-    </div>
-  </a>
+  <section class="cta-section">
+    <h3>Your Wardrobe Awaits Its Masterpiece.</h3>
+    <p>
+      Discover the Vestrix difference. Explore our collections, find your perfect piece, and embark on a journey of unparalleled style and confidence.
+    </p>
+    <a href="collections.html" class="cta-button">Begin Your Vestrix Journey</a>
+  </section>
 
-  <a href="accessories.html" class="feature-link">
-    <div class="feature-card">
-      <h3>Style Accessories</h3>
-      <p>Complete your look with our stylish accessories and essentials.</p>
-    </div>
-  </a>
-</section>
-
-  </main>
-
-  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <p>&copy; 2025 Vestrix. All rights reserved.</p>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
       </div>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 </html>

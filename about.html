@@ -1,148 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vestrix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-        /*title*/
-    h1 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin: 40px 0 20px;
-      color: #111;
-    }
-
-    nav {
-      background-color: #000;
-      padding: 10px 0;
-    }
-
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .menu li {
-      margin: 0 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    .menu a:hover {
-      color: #f0c040; 
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .menu li {
-        margin: 10px 0;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-      }
-    }
-    /* Footer*/
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 50px;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #f0c040;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* for mobile */
-@media (max-width: 768px) {
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-}
-
-  </style>
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Vestrix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-   <h1 style="text-align: center;"><i>Vestrix</i></h1>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="arrivals.html">New Arrivals</a></li>
-      <li><a href="collections.html">Collections</a></li>
-      <li><a href="accessories.html">Accessories</a></li>
-      <li><a href="lookbook.html">Lookbook</a></li>
-      <li><a href="giftcard.html">Gift Card</a></li>  
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-  </nav>
-  </header>
-  
-  <br><br><br><br><br>
 
-  <footer>
-  <div class="footer-container">
-    <p>&copy; 2025 Vestrix. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-    </div>
+  
+  <div class="particle-bg">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
   </div>
-</footer>
 
 
-  <br><br><br><br><br>
+  <!-- <h3 style="text-align: center; color: #000; background-color: beige; margin: 0;">Summer Sale Is Live Flat 10% Off</h3> -->
 
+ 
+  <header>
+    <div class="nav-container">
+      <h1>V E S T R I X</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        <li class="dropdown">
+          <a href="collections.html" class="dropdown-toggle">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a href="men.html">Men's Collection</a></li>
+            <li><a href="women.html">Women's Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="login-button-container">
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+    </div>
+  </header>
 
   
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>Our Story</h2>
+      <p>Where Art Meets Fashion, Where Dreams Become Reality</p>
+    </div>
+  </section>
 
+
+  <main class="about-content">
+    
+ 
+    <section class="story-section">
+      <div class="container">
+        <div class="story-content">
+          <h3>The Vestrix Legacy</h3>
+          <p class="lead-text">
+            In the heart of timeless elegance, where every stitch tells a story and every design whispers of dreams yet to be realized, Vestrix was born from a vision that transcends mere fashion—it is a celebration of the human spirit, a testament to the art of living beautifully.
+          </p>
+          <p>
+            Founded on the principle that true luxury is not merely worn but experienced, Vestrix emerged as a beacon of sophisticated individuality in a world of fleeting trends. We believe that fashion is the most intimate form of self-expression, a silent language that speaks volumes about who we are and who we aspire to become.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="philosophy-section">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-content">
+            <h3>Our Philosophy</h3>
+            <p>
+              At Vestrix, we embrace the philosophy that true elegance is born from the harmonious marriage of heritage and innovation. Every piece we create is a carefully orchestrated symphony of tradition and modernity, where time-honored craftsmanship meets contemporary vision.
+            </p>
+            <p>
+              We believe that luxury is not defined by price alone, but by the meticulous attention to detail, the thoughtful selection of the world's finest materials, and the unwavering commitment to excellence that goes into every garment. Each piece is crafted with the understanding that it will become part of someone's most precious moments—their triumphs, their celebrations, their quiet moments of confidence and grace.
+            </p>
+          </div>
+          <div class="philosophy-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Vestrix Craftsmanship">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="craftsmanship-section">
+      <div class="container">
+        <h3>The Art of Craftsmanship</h3>
+        <div class="craftsmanship-grid">
+          <div class="craft-item">
+            <div class="craft-icon">✧</div>
+            <h4>Meticulous Detail</h4>
+            <p>Every stitch, every seam, every button is placed with intention. Our master artisans work with the precision of surgeons and the vision of artists, ensuring that each garment meets our exacting standards of perfection.</p>
+          </div>
+          <div class="craft-item">
+            <div class="craft-icon">✧</div>
+            <h4>Premium Materials</h4>
+            <p>We source only the world's finest fabrics—silks that whisper against the skin, wools that embrace with warmth, and cottons that breathe with life. Each material is carefully selected for its quality, sustainability, and beauty.</p>
+          </div>
+          <div class="craft-item">
+            <div class="craft-icon">✧</div>
+            <h4>Timeless Design</h4>
+            <p>Our designs transcend seasons and trends, creating pieces that become cherished companions for years to come. We believe in the power of understated elegance and the confidence that comes from wearing something truly exceptional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="vision-section">
+      <div class="container">
+        <div class="vision-content">
+          <h3>Our Vision</h3>
+          <p class="vision-text">
+            Vestrix is more than a fashion house—we are custodians of dreams, architects of confidence, and storytellers of the human experience. We envision a world where every individual feels empowered to express their unique beauty, where style is not a mask but a revelation of the soul within.
+          </p>
+          <p>
+            We are committed to creating not just clothing, but experiences that elevate the everyday into the extraordinary. Each piece is designed to make the wearer feel not just beautiful, but powerful, not just stylish, but unstoppable. We believe that when you look your best, you feel your best, and when you feel your best, you can achieve anything.
+          </p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="values-section">
+      <div class="container">
+        <h3>Our Values</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <h4>Exclusivity</h4>
+            <p>We create limited collections that celebrate individuality, ensuring that each piece is as unique as the person who wears it.</p>
+          </div>
+          <div class="value-item">
+            <h4>Sustainability</h4>
+            <p>We are committed to responsible luxury, using sustainable practices and materials that honor both our planet and our craft.</p>
+          </div>
+          <div class="value-item">
+            <h4>Innovation</h4>
+            <p>We constantly push the boundaries of what's possible, blending cutting-edge technology with traditional craftsmanship.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="cta-section">
+      <div class="container">
+        <h3>Join the Vestrix Family</h3>
+        <p>Discover the art of sophisticated living. Experience the difference that true craftsmanship makes. Become part of a community that values beauty, quality, and the power of self-expression.</p>
+        <div class="cta-buttons">
+          <a href="collections.html" class="cta-btn primary">Explore Collections</a>
+          <a href="contact.html" class="cta-btn secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Vestrix. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
